@@ -38,12 +38,12 @@ nav ul {
   list-style-type: none;
   /* UL is flex, a is block for navigation bars */
   /* gives space between nav items */
-  gap: 1rem;
+  gap: 0.5rem;
 }
 nav a {
   font-weight: 700;
   text-decoration: none;
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.5rem;
   display: block;
   color: var(--text-color);
   border-radius: 10px;
