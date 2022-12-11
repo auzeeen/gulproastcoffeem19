@@ -1,0 +1,262 @@
+:root {
+  --header-font: "Poppins", sans-serif;
+  --main-font: "Lato", sans-serif;
+  --hover-color: #d98555;
+  --site-color: #082B59;
+  --text-color: #ffffff;
+  --text-hover-color: #d98555;
+  --button-color: #59331D;
+  --main-text-color: #000000;
+}
+
+nav {
+  margin-right: 0 1rem;
+}
+nav .logo {
+  margin-right: auto;
+}
+nav header {
+  background-color: #082B59;
+  color: var(--site-color);
+  border-bottom: 10px solid var(--text-hover-color);
+  font-family: var(--main-font);
+  line-height: 1;
+}
+nav img {
+  max-width: 150px;
+}
+nav .logo a {
+  background-color: transparent;
+  margin: 0;
+}
+nav a:hover {
+  color: var(--hover-color);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /* UL is flex, a is block for navigation bars */
+  /* gives space between nav items */
+  gap: 1rem;
+}
+nav a {
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  display: block;
+  color: var(--text-color);
+  border-radius: 10px;
+  /* pushes nav buttons down to line up with logo */
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  nav {
+    margin-left: 0;
+  }
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  nav a {
+    margin: 0 0 2rem 0;
+  }
+  .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 900px) {
+  nav ul {
+    justify-content: flex-start;
+  }
+  nav a {
+    margin-top: 4.5rem;
+  }
+  .logo {
+    flex-basis: auto;
+    margin-right: auto;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+p {
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.953125rem;
+}
+
+h2 {
+  font-size: 1.5625rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+img {
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+  line-height: 2;
+  background-color: var(--site-color);
+  font-weight: 400;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--button-color);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: var(--text-color);
+  text-decoration: none;
+  border: 3px solid var(--button-color);
+}
+
+.button:hover {
+  background-color: var(--text-color);
+  color: var(--button-color);
+}
+
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+a {
+  color: var(--button-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 10px solid var(--text-hover-color);
+}
+
+/* establishes a white background */
+.main-bkgd {
+  background: var(--text-color) url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+
+/* sits inside of the white background, centered */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+article {
+  flex-basis: 73%;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--button-color);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: var(--text-color);
+  text-decoration: none;
+  border: 3px solid var(--button-color);
+}
+
+.button:hover {
+  background-color: var(--text-color);
+  color: var(--button-color);
+}
+
+footer {
+  color: var(--text-color);
+  text-align: center;
+  border-top: 10px solid var(--text-hover-color);
+  background-color: var(--site-color);
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--text-color);
+  font-size: 1rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+
+.card {
+  color: var(--main-text-color);
+  border-radius: 10px;
+}
+
+.card h3 {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.card p {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.products h1 {
+  margin: 1rem;
+}
+
+.homepage {
+  margin: 3rem;
+  padding: 0;
+  text-align: center;
+  background-color: var(--text-color);
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,43 @@
+  // NAVIGATION BAR CSS STYLING 
+  nav {
+    margin-right: 0 1rem;
+
+    .logo {
+        margin-right: auto;
+      }
+    header {
+        background-color: var(--site-color);
+        border-bottom: 10px solid var(--text-hover-color);
+        font-family: var(--main-font);
+        line-height: 1;
+      }
+    img {
+        max-width: 150px;
+      }
+    .logo a {
+        background-color: transparent;
+        margin: 0;
+      }
+    a:hover {
+        color: var(--hover-color);
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        /* UL is flex, a is block for navigation bars */
+        /* gives space between nav items */
+        gap: 1rem;
+    }
+    a {
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        display: block;
+        color: var(--text-color);
+        border-radius: 10px;
+        /* pushes nav buttons down to line up with logo */
+        margin-top: 3.5rem;
+        text-align: center; 
+    }
+}
