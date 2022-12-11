@@ -16,9 +16,9 @@ nav .logo {
   margin-right: auto;
 }
 nav header {
-  background-color: #082B59;
   color: var(--site-color);
   border-bottom: 10px solid var(--text-hover-color);
+  margin: 0;
   font-family: var(--main-font);
   line-height: 1;
 }
@@ -251,12 +251,14 @@ footer a {
 }
 
 .products h1 {
-  margin: 1rem;
-}
+  margin: 0 auto;
+  border: 2rem;
+  padding: 2rem;}
 
 .homepage {
-  margin: 3rem;
-  padding: 0;
+  margin: 0 auto;
+  border: 2rem;
+  padding: 2rem;
   text-align: center;
   background-color: var(--text-color);
 }/*# sourceMappingURL=styles.css.map */
